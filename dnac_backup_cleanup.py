@@ -72,12 +72,7 @@ def main():
     token = get_auth_token()
     print("Authentication successful. Token retrieved.")
 
-    #Create a backup
-    # print("Creating a new backup...")
-    # task_id = create_backup(token)
-    # check_task_status(token, task_id)
-    # #wait for user input
-    # input()
+ 
 
     # List backups
     print("\nListing backups...")
@@ -99,7 +94,7 @@ def main():
     # Step 2: Sort by start_timestamp
     backup_info_sorted = sorted(backup_info, key=lambda x: x["start_timestamp"])
 
-    # Step 3: Keep only the last 2 (most recent)
+    # Step 3: Keep only the last {retention} (most recent)
     latest_backups = backup_info_sorted[-retention:]
 
     # Print the results
