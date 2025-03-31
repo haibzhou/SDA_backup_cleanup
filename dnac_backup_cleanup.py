@@ -9,7 +9,7 @@ from datetime import datetime
 requests.packages.urllib3.disable_warnings()
 
 # Base configuration
-DNAC_HOST = "172.18.55.137"  # Replace with your Catalyst Center IP or hostname
+DNAC_HOST = "[CatC_VIP]"  # Replace with your Catalyst Center IP or hostname
 DNAC_USERNAME = "[username]"        # Replace with your username
 DNAC_PASSWORD = "[password]"        # Replace with your password
 BASE_URL = f"https://{DNAC_HOST}"
