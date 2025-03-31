@@ -98,7 +98,7 @@ def main():
     latest_backups = backup_info_sorted[-retention:]
 
     # Print the results
-    print("Last 2 Backups (sorted by creation time):")
+    print(f"Last {retention} Backups (sorted by creation time):")
     for backup in latest_backups:
         print(f"Backup ID: {backup['backup_id']}, Created: {backup['creation_time']}")
     
