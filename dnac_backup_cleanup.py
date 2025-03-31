@@ -103,7 +103,7 @@ def main():
         print(f"Backup ID: {backup['backup_id']}, Created: {backup['creation_time']}")
     
     
-   # Check if there are more than 2 items, and exclude the last 2
+   # Check if there are more than {retention} items, and exclude the last {retention}
     if len(backup_info_sorted) > retention:
         older_backups = backup_info_sorted[:-retention]
         print(f"All Backup IDs except the last {retention}:")
