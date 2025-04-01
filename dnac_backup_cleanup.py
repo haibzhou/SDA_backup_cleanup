@@ -9,9 +9,9 @@ from datetime import datetime
 requests.packages.urllib3.disable_warnings()
 
 # Base configuration
-DNAC_HOST = "10.87.125.61:8232"  # Replace with your Catalyst Center IP or hostname
-DNAC_USERNAME = "netadmin"        # Replace with your username
-DNAC_PASSWORD = "C1sc01234"        # Replace with your password
+DNAC_HOST = "<CatC IP address>"  # Replace with your Catalyst Center IP or hostname
+DNAC_USERNAME = "<username>"        # Replace with your username
+DNAC_PASSWORD = "password"        # Replace with your password
 BASE_URL = f"https://{DNAC_HOST}"
 
 
