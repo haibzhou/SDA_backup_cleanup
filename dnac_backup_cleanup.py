@@ -115,7 +115,7 @@ def main():
             #print(backup["backup_id"])
             #     # Delete a backup
             print(f"\nDeleting backup {backup["backup_id"]}, {backup['creation_time']}...")
-            delete_backup(token, backup["backup_id"])
+            #delete_backup(token, backup["backup_id"])
     else:
         print(f"There are {retention} or fewer backups, so nothing to print excluding the last {retention}.")
         
